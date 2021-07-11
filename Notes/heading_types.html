@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- This is a external type CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- This is a internal type CSS-->
+    <!-- <style>
+        h2{
+            color: brown;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Types of Heading tags -->
+    <h1 style="color: blue;">Welcome to my Website &lth1&gt  </h1> <!-- style is a inline type CSS-->
+    <h2>Welcome to my Website</h2 >
+    <h3>Welcome to my Website</h3>
+    <h4>Welcome to my Website</h4>
+    <h5>Welcome to my Website</h5>
+    <h6>Welcome to my Website</h6>
+
+    <!-- Paragraph Tag -->
+    <p>
+        <b>Lorem ipsum dolor sit, </b> <!-- Bold Tag -->
+        <i>amet consectetur adipisicing elit.</i><!-- Italic tag -->
+        <small> omnis deleniti id sequi. Voluptatum aspernatur illum voluptas, </small><!-- Small tag -->
+        aperiam illo quisquam corporis iste ad consectetur culpa nam commodi modi quas beatae
+        10<sup>
+            2
+        </sup>
+        <sub>
+            2
+        </sub>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis, odio earum modi, tenetur animi magni illo eius incidunt, ipsum necessitatibus ea temporibus? Iste aut, earum blanditiis doloremque dolorum dicta.
+        <hr>For Horizontal Line <!-- To draw a horizontal line -->
+        <br>For line break <!-- For a line Break -->
+    </p>
+
+    <!-- Types of List: 1.Order List 2. Description List 3.Inorder List -->
+
+    <!-- Order List: -->
+    <hr>
+    <h2>Items Needed:</h2>
+    <ol type="a">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <!-- Nested list -->
+        <ol>
+            <li>open</li>
+            <li>Mix</li>
+        </ol>
+        <li>Forth Item</li>
+    </ol>
+
+    <!-- Description List: -->
+    <hr>
+    <h2>Shopping List</h2>
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Butter</li>
+        <li>Jam</li>
+    </ul>
+
+    <!-- Hyperlink -->
+    <hr>
+    <a href="https://www.google.com" target="_blank">Google</a> <!-- '_blank' is used for new tab -->
+    <a href="new.html">New Page</a>
+    <a href="Resources/THE CALCUTTA (1).pdf" target="_blank"><h2>Resources</h2></a>
+    
+    <!-- Image tags -->
+    <hr>
+    <img src="Resources/Images/Screenshot (52).pn" alt="This is an image" width="350"> <!-- If we mention both height and width doesn't maintain -->
+    <img src="Resources/Images/Screenshot (52).png" alt="This is an image" width="350">
+    <!-- 'alt' represents the alternate text appears during image loading failed -->
+
+    <br>
+    <!-- Video Tag -->
+    <video src="Resources/Videos/file_example_MP4_480_1_5MG.mp4" width="400" autoplay></video>
+    <video src="Resources/Videos/file_example_MP4_480_1_5MG.mp4" width="400" controls></video>
+    <br>
+    <video src="Resources/Videos/file_example_MP4_480_1_5MG.mp4" width="400" loop></video>
+    <video src="Resources/Videos/file_example_MP4_480_1_5MG.mp4" width="400" loop muted></video>
+    <video src="Resources/Videos/file_example_MP4_480_1_5MG.mp4" width="400" controls poster="Resources/Images/Screenshot (52).png"></video>
+    <br>
+    <!-- Embedding: Showing other websites contents -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="http://sipratravels.com/" frameborder="0" width="560" height="600"></iframe>
+
+    <br>
+    <hr>
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total Marks</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>English</td>
+                <td>75 </td>
+                <td>-</td>
+                <td>75</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>75 </td>
+                <td>-</td>
+                <td>75</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>75 </td>
+                <td>-</td>
+                <td>75</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>75 </td>
+                <td>-</td>
+                <td>75</td>
+                <td>81</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="5">Result:Pass</th>
+        </tfoot>
+    </table>
+
+    <!-- Inline elements -->
+    <p>This is first para</p>
+    <p>This is first second</p>
+    <p>This is first third</p>
+    <p>This is first forth</p>
+    <!-- Block elements -->
+    <em>This is em tag.</em>
+    <em>This is used to emphasize text</em>
+</body>
+</html>

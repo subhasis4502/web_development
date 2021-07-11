@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut & ClearTimeOut</title>
+</head>
+<body>
+    <div class="time">
+        Time now is <span id="time"></span>
+    </div>
+    <div class="contaier">
+        This is a container
+    </div>
+    <script>
+        console.log("This is JS video 12");
+        //setTimeout --> Allows us to run the function once after the unterval of time
+        //clearTimeout --> Allows us to run the function repeatedly after the unterval of time
+
+        function greet(name, message){
+            console.log("Hello! good morning " + name + " " + message);
+        }
+        timeOut = setTimeout(greet, 5000, "Subhasis", "take care"); //here 'timeOut' gets a unique id of this setTimeout
+        //clearTimeout(timeOut); //Clears the given id of setTimeout 
+
+        //setTimeout(greet(), 2000); //Wrong! do not use perenthesis to call a function in setTimeout
+
+        intervalId = setInterval(greet, 1000);
+        clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time
+        }
+
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

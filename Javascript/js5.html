@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        /* var string1 = "This is a string1";
+        var string1 = "This is a string2"; //Replaceable
+        console.log(string1);
+
+        let a = "u"; //Global variable
+        //let a = "us"; //Non replaceable
+
+        //Declaring block
+        {
+            let a  = "uu"; //Possible as it is a local variable
+            console.log(a);
+        }
+        console.log(a); 
+
+        //Declaring constant
+        const c  = "This cannot be changed";
+        //c = "I want to change this"; //Error
+        console.log(c); */
+
+        /* //If-else condition:
+        let age = 2;
+        if(age > 15)
+            console.log("You can drink");
+        else if(age == 2)
+            console.log("Age is 2");
+        else
+            console.log("You can't drink"); */
+
+        //Switch Case:
+        //If we not apply break then it will execute rest of the conditions from where the condition matches
+        const cups = 45;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+            
+            case 45:
+                console.log("The value of cups is 45");
+                break;
+            
+            case 50:
+                console.log("The value of cups is 50");
+                break;
+
+            default:
+                console.log("None of them");
+                break;
+        }
+    </script>
+</body>
+</html>

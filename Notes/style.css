@@ -1,0 +1,48 @@
+/* 
+Different types of selector:
+1. Type Selector
+    h1{
+        property value;
+    }
+
+2. Class Selector
+    <h1 class="className">
+    .className{
+        property:value;
+    }
+
+3. Id Selector
+    <h1 class="idName">
+    #idName{
+        property:value;
+    }
+
+4. Attribute Selector
+    a[href="www.example.com"]{
+        property:value;
+    }
+
+5. Pseudo Class Selector
+    selector: pseudo-class{
+        property: value;
+    }
+
+6. Pseudo Element Selector
+    tag::section{
+        property: value;
+    }
+
+7. Combinators Selector
+    base_tag > child_tag{
+        property: value;
+    }  
+    
+8. Universal Selector
+    *{
+        property: value;
+    } 
+*/
+
+table, tr, th, td{
+    border: 2bx solid black;
+}

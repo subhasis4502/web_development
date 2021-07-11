@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Grid in Bootstrap</title>
+    <style>
+        body{
+            background-color: #7853b2;
+        }
+        .container,
+        .container-fluid{
+            background-color: #f7cd07;
+            padding: 2em;
+        }
+
+
+        .panel{
+            border-radius: 0.3rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .panel.panel-blue{
+            border: 1px solid #0087FF;
+            background-color: #DDedff;
+            color: #0087FF;
+        }
+
+        .panel.panel-yellow{
+            border: 1px solid #ffbd00;
+            background-color: #fef0b2;
+            color: #ffbd00;
+        }
+
+        .panel.panel-pink{
+            border: 1px solid #f84f7f;
+            background-color: #fad2e1;
+            color: #f84f7f;
+        }
+
+        .panel.panel-purple{
+            border: 1px solid #7f51f4;
+            background-color: #dfccff;
+            color: #7f51f4;
+        }
+    </style>
+</head>
+<body class="py-5">
+    <div class="container panel panel-blue">
+        Hello! I am in a simple container.
+    </div>
+
+    <div class="container-fluid my-4 panel panel-blue">
+        Hello! I am in a fluid-width container.
+    </div>
+
+    <!-- Making containers -->
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-blue">This is a single column.</div>
+            </div>
+        </div>
+
+        <!-- There are 12 max columns possibe -->
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-purple">This is the first column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-purple">This is the second column.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-pink">This is the third column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the forth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the fifth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the sisth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the seventh column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the eighth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the nineth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the tenth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the eleventh column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the twelveth column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the first column.</div>
+            </div>
+            <div class="col">
+                <div class="panel panel-pink">This is the second column.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Giving width to a column -->
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-6 panel panel-yellow">Giving width to a column-6</div>
+            <div class="col-4 panel panel-yellow">Giving width to a column-6</div>
+        </div>
+        <div class="row">
+            <div class="col-5 panel panel-yellow">Giving width to a column-5</div>
+            <div class="col-7 panel panel-yellow">Giving width to a column-7</div>
+        </div>
+        <div class="row">
+            <div class="col-3 panel panel-yellow">Giving width to a column-3</div>
+            <div class="col-4 panel panel-yellow">Giving width to a column-4</div>
+        </div>
+    </div>
+
+    <!-- Using break-point for responsiveness -->
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow">Giving width to a column-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow">Giving width to a column-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow">Giving width to a column-3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow">Giving width to a column-3</div>
+        </div>
+    </div>
+
+    <!-- Give gap between columns by offset -->
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-4 panel panel-yellow">Giving width to a column-4</div>
+            <div class="col-4 offset-4 panel panel-yellow">Giving width to a column-4</div>
+        </div>
+    </div>
+
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-12 panel panel-yellow">This is bigger column
+                <div class="row">
+                    <div class="col-4 panel panel-yellow">Col-4</div>
+                    <div class="col-4 panel panel-yellow">Col-4</div>
+                    <div class="col-4 panel panel-yellow">Col-4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

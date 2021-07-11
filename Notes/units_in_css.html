@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', monospace;
+            font-size: 20px;
+        }
+        .percent{
+            font-size: 200%; /* This gives 200% value of its parent element(here body) */
+        }
+        .em{
+            font-size: 2em; /* This gives 2 times value of its parent element(here body) */
+        }
+        .rem{
+            font-size: 2rem; /* This gives 2 times value of its root element(here html) */
+        }
+    </style>
+    <title>Units in CSS</title>
+</head>
+<body>
+    <!-- 
+    There are two types in CSS
+        1. Relative Units
+            i.%
+            ii.em
+            iii.rem
+            iv.vw : Relative to 1% of the width of the view port
+            v.vh : Relative to 1% of the height of the view port
+            vi.vmin : 1% of the viewport's smaller dimension
+            vii.vmax : 1% of the viewport's larger dimension
+        2. Absolute Units
+            i.cm
+            ii.mm
+            iii.in
+            iv.px(pixels)
+            v.pt(points)
+            vi.pc(picas = 12xpt)
+    -->
+    <div class="percent"> font-size: 200% </div>
+
+    <div class="em">font-size: 1em</div>
+
+    <div class="rem">font-size: 1rem</div>
+
+</body>
+</html>

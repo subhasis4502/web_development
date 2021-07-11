@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness Challenge</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* h1{
+            color: green;
+            text-align: center;
+        } */
+
+        .main{
+            padding: 10px;
+        }
+
+        .name1,
+        .name2,
+        .name3,
+        .name4{
+            color: brown;
+            padding: 20px;
+        }
+
+        .name1{
+            background-color: grey;
+            }
+
+        .name2{
+            background-color: rgb(172, 169, 169);
+        }
+
+        .name3{
+            background-color: rgb(201, 197, 197);
+        }
+
+        .name4{
+            background-color: rgb(226, 220, 220);
+        }
+
+        @media all and (min-width: 801px){
+            .name1{
+            width: 25%;
+            float: left;
+            }
+
+            .name2{
+                width: 25%;
+                float: left;
+            }
+
+            .name3{
+                width: 25%;
+                float: right;
+            }
+
+            .name4{
+                width: 25%;
+                float: right;
+            }
+        }
+        
+        @media all and (max-width: 800px) and (min-width: 500px){
+            .name1{
+            width: 50%;
+            float: left;
+            }
+
+            .name2{
+                width: 50%;
+                float: right;
+            }
+
+            .name3{
+                width: 50%;
+                float: left;
+            }
+
+            .name4{
+                width: 50%;
+                float: right;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <h1>Media Query for Columns-Increase or decrease the screen size to see the change</h1> -->
+        <div class="name1">
+            <h2>Name 1</h2>
+            <p>I am Aman</p>
+        </div>
+
+        <div class="name2">
+            <h2>Name 2</h2>
+            <p>I am Rahul</p>
+        </div>
+
+        <div class="name3">
+            <h2>Name 3</h2>
+            <p>I am Neha</p>
+        </div>
+
+        <div class="name4">
+            <h2>Name 4</h2>
+            <p>I am Yash</p>
+        </div>
+    </div>
+</body>
+</html>

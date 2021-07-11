@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <!-- Adding static css in pug file -->
+    style
+        include style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <form action="/" id="contact" method="POST">
+        <h2>
+            | #{content} <!-- Pipeline is required to render this line as HTML -->
+            <!-- This is a plain HTML using pug -->
+        </h2>
+        <p>Name: <input type="text" name="name" id="name" placeholder="Enter your name"></p>
+        <p>Age: <input type="text" name="age" id="age" placeholder="Enter your age"></p>
+        <p>Address: </p><textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+        <br>
+        <button class="btn">Submit</button>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries: width</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+
+        /* For screen width size less than 600 */
+        /* @media screen and (max-width: 600px) {
+            body{
+                color: red;
+            }
+        } */
+
+        /* For the screen in landscape */
+        /* @media (orientation: landscape){
+            body{
+                color: yellowgreen;
+            }
+        } */
+
+        /* Combining two conditions */
+        /* @media screen and (max-width: 600px) and (orientation: landscape) {
+            body{
+                color: blue;
+            }
+        } */
+
+        /* For any one condition(OR logic) */
+        /* @media screen and (max-width: 600px), screen and (orientation: landscape) {
+            body{
+                color: green;
+            }
+        } */
+
+        /* For when the screen is not in landscape(NOT logic) */
+        @media not all and (orientation: landscape) {
+            body{
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minus laborum fuga expedita maiores beatae at aliquid ipsa accusantium reiciendis laudantium necessitatibus facere neque modi deserunt aut voluptatibus, hic corporis ex cum molestiae quasi. Fugit omnis laborum quae inventore distinctio ad dolorum doloremque accusantium expedita quam molestias porro optio, natus officiis qui! Id ad minus itaque eum veritatis voluptas quae maxime illo? Maxime neque placeat aut libero dolore quis ea aliquam ratione tempore optio culpa officiis harum aspernatur, praesentium nesciunt, esse at! Quaerat ratione molestiae assumenda et, repudiandae sit at totam. Nesciunt debitis ipsum quam libero fuga eius assumenda. Vero ullam quia deleniti architecto ipsa eius accusantium consectetur perferendis itaque aspernatur, harum doloribus accusamus fugit soluta blanditiis. Sunt recusandae optio dicta alias assumenda consequatur sequi repudiandae possimus enim consectetur eius, saepe, ipsam officia dignissimos expedita quibusdam velit! Velit pariatur omnis doloribus reprehenderit veniam vero fugit, accusamus voluptatibus recusandae placeat fugiat. Iure nulla, delectus magnam nobis quaerat repellendus placeat, illum recusandae incidunt culpa, laboriosam ab rem blanditiis saepe quisquam necessitatibus? Accusantium, optio soluta eaque alias laboriosam consequatur eveniet ab corporis, necessitatibus aperiam quisquam odit similique quod harum sapiente rerum totam cum officia voluptatem exercitationem aliquam tempore sequi iste. Est, soluta expedita.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore veritatis laborum natus repudiandae totam sequi ab excepturi assumenda saepe eos iusto quos aliquid fugiat in qui animi dolor impedit, quae ex optio velit libero. Ipsam non repellat quae eos deleniti doloremque quam sint voluptatum! Voluptates temporibus mollitia neque modi!</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">Simple si html</div>
+    <script>
+        //Primitive variables
+        let myVar1 = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //Object type variable
+        let student = {
+            name: "Subhasis",
+            year: 3,
+            dept: "IT",
+            "college name": "Jadavpur"
+        }
+        console.log(student);
+        console.log(student.dept);
+        console.log(student["college name"]);
+
+        //Array object
+        let names = [41, 2, null, "Subhasis", undefined]; //We can enter any type of value here
+        //let names = new Array(1, 2, null, "Subhasis", undefined); //Another way of declaring array
+        console.log(names);
+        console.log(names[3]);
+        console.log(names.length);
+        console.log(names.sort());
+        names.push("Pushed");
+        console.log(names);
+        names.pop("Pushed");
+        names.pop(5);//Another way
+        console.log(names);
+        let name = new Array(10);//Create an array of 10 blank element
+        console.log(name);
+    </script>
+</body>
+</html>

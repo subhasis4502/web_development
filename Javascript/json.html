@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+        //JSON is used for transfering the objects like a string over the network
+        let jsonObj = {
+            name: "Subhasis",
+            dept: "IT",
+            college: "JU",
+            country: "India"
+        }
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj); //Converted the object to string
+        console.log(myJsonStr);
+
+        //Applying string methods
+        myJsonStr = myJsonStr.replace("India", "US");
+        console.log(myJsonStr);
+
+        newJsonObj = JSON.parse(myJsonStr); //Convert this string to its object
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>

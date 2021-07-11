@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | String Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = "This is a string"
+        console.log(str);
+
+        var position = str.indexOf("is"); //First occurance of a sub-string
+        console.log(position);
+
+        position = str.lastIndexOf("is"); //Last occurance of a sub-string
+        console.log(position);
+
+        //Slicing
+        //var substr = str.slice(1, 7); 
+        var substr = str.substring(1, 7);
+        console.log(substr);
+
+        var replaced = str.replace("string", "subhasis");
+        console.log(replaced);
+
+        console.log(str.toUpperCase(str));
+        console.log(str.toLowerCase(str));
+
+        var new_string = str.concat(" new string");
+        console.log(new_string);
+
+        var ws = "     this     is   too much    whitespace     ";
+        console.log(ws.trim()); //Removes the whitespace from beginning and from the end
+
+        var char3 = str.charAt(2); //Charecter at that index
+        var char3code = str.charCodeAt(2); //Charecter code of that character
+        console.log(char3);
+        console.log(char3code);
+        console.log(str[2]);
+    </script>
+</body>
+</html>

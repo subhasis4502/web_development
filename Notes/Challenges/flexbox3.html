@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-3 Challenge</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100;
+        }
+        .flex{
+            display: flex;
+            width : 100vw;
+            min-height: 100%;
+        }
+
+        .side-bar{
+            background-color:aquamarine;
+            padding: 20px;
+            width: 15%;
+        }
+
+        .content{
+            width: 85%;
+        }
+
+        .header{
+            padding: 20px;
+            background-color:greenyellow;
+            height: 23vh;
+        }
+
+        .article{
+            padding: 20px;
+            height: 33vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="side-bar">
+            <h4>Nav</h4>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h4>Header</h4>
+            </div>
+            <div class="article">
+                <h4>Article</h4>
+            </div>
+            <div class="header">
+                <h4>Footer</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

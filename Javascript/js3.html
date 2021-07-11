@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial 2 - String & String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, deserunt.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit nisi tempora, minus rerum itaque architecto voluptatibus! Quidem, iste? Officiis explicabo, cum rem hic blanditiis adipisci laborum. Id, mollitia pariatur? Autem quaerat id eaque laudantium quis, rem facilis enim fuga distinctio facere neque quas totam excepturi. Sed, reprehenderit optio. Qui!</p>
+    </div>
+    <script>
+        var string = "this";
+        console.log(string);
+
+        var name = 'Subhasis'; //We can use both '' & "" to specify string
+        var message = "I am an IT student"
+        console.log(name + " " + message);
+
+        var college = "Jadavpur University";
+        var temp = `'${name}' studied in "${college}"`; //Using '$' to insert some value from a variable, here we can use '' as well as ""
+        console.log(temp);
+        var len = name.length;
+        console.log("Length of name: " + len);
+
+        console.log("Hello World \nSubhasis\tDas");
+
+        //Another way of making string
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is a h3 heading</h3>'
+    </script>
+</body>
+</html>

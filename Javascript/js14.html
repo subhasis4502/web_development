@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions(Shortcuts)</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial
+    </div>
+    <script>
+        /* function greet(){
+            console.log('Good Morning');
+        } */
+        //Arrow function: Work same as the previous function declaration
+        /* greet =() => {
+            console.log('Good Morning');
+        } */
+
+        greet = () => console.log('Good Morning'); //For no variable function we need to mention the brackets ()
+        greet();
+
+        setTimeout(() => {
+            console.log("We are inside set-timeout");
+        }, 3000);
+
+        /* let sum = (a,b) => {
+            return a+b;
+        } */
+
+        //Shortcut of the previous function
+        let sum = (a,b) => a+b; //This shortcut is only applicable if we need to perform a single task
+        let half = a => a/2; //For a single variable function we don't need to mention the brackets also
+
+        let obj1 = {
+            greeting: "Good Morning! ",
+            names: ["Subhasis", "Sougata", "Wasim"],
+            speak(){
+                this.names.forEach((student)=>{ //Arrow doesn't have any 'this' of its own if it is mentioned inside a object, so here 'this' refers to the outer object
+                    console.log(this.greeting + "Hello " + student); //This property is known as lexical this
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

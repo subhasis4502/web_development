@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        //Different given Math constants
+        console.log(m.E);
+        console.log(m.PI);
+        console.log(m.LN2);
+        console.log(m.SQRT1_2);
+        console.log(m.LOG2E);
+
+        //Different given Math functions
+        let a = 34.876;
+        let b = 89;
+        console.log("The value of rounded a and b: " + Math.round(a), Math.round(b));
+        console.log("The value of 3^2: " + Math.pow(3, 2));
+        console.log("The value of sqrt(36): " + Math.sqrt(36));
+        console.log("The floor value of 5.8: " + Math.floor(5.8));
+        console.log("The ceil value of 5.2: " + Math.ceil(5.2));
+        console.log("The absolute value of 5.6: " + Math.abs(-5.2));
+        console.log("The sin value of PI/2: " + Math.sin(Math.PI/2)); //Trigonametry functions takes radian values as input
+        console.log("The minimum value of 4,5,6,2: " + Math.min(4,5,6,2));
+        console.log("The max value of 4,5,6,2: " + Math.max(4,5,6,2));
+        console.log("Random number generator: " + Math.random()); //Generate any number between 0 and 1
+        console.log("Random number between 100 to 200: " + (100 + (200-100)*Math.random())); //Formual = start_num + (end_num - start_num)*Math.random()
+    </script>
+</body>
+</html>
