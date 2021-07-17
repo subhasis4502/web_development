@@ -6,14 +6,14 @@ function updateMap() {
       rsp.data.forEach((element) => {
         latitude = element.latitude;
         longitude = element.longitude;
+        infected = element.infected;
 
-        cases = element.infected;
-        if (cases > 255){
+        if (infected > 255){
             color = "rgb(255, 0, 0)";
         }
 
         else{
-            color = `rgb(${cases}, 0, 0)`;
+            color = `rgb(${infected}, 0, 0)`;
         }
 
         new mapboxgl.Marker({

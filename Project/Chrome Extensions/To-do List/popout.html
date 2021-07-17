@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <style>
+      body{
+        width: 170px;
+      }
+
+      body h1{
+        text-align: center;
+      }
+      .todo-items,
+      .todo-items li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .todo-items li{
+        padding: 10px;
+        border-bottom: 2px solid gray;
+        display: flex;
+        justify-content: space-between;
+      }
+      .todo-items li:hover {
+        background: antiquewhite;
+        font-size: 13px;
+      }
+
+      .button{
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      .createTask{
+        font-weight: bold;
+        background: white;
+        border: 2px solid;
+        border-radius: 5px;
+        margin: 18px;
+        cursor: pointer;
+      }
+
+      .done{
+        text-decoration: line-through;
+      }
+
+      .new-item{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-do List</h1>
+    <ul class="todo-items">
+      <button class="createTask">⊕ Add a New Task</button>
+      <div class="new-item">
+        <input type="text">
+        <button>Add</button>
+        <button>Cancel</button>
+      </div>
+      <script src="popout.js"></script>
+    </body>
+</html>
